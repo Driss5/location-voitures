@@ -1,0 +1,12 @@
+.frm-add input {
+    margin: 15px 0;
+    width: 90%;
+}
+.frm-add {
+    margin-left: 60px;
+}
+.frm-add button {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}

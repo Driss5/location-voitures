@@ -1,0 +1,257 @@
+/* Modern, minimal, and user-friendly style for reservation section */
+
+body {
+    background: linear-gradient(120deg, #f8fafc 0%, #e0f7fa 100%);
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.reservation-main {
+    min-height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 8px;
+}
+
+.form-row-vertical {
+    flex-direction: column !important;
+    gap: 12px;
+    display: flex;
+}
+
+.reservation-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+    overflow: hidden;
+    max-width: 950px;
+    width: 100%;
+    gap: 0;
+}
+
+.car-details {
+    flex: 1 1 340px;
+    background: #f5fafd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 28px 32px 28px;
+    min-width: 320px;
+    border-right: 1.5px solid #e0e0e0;
+}
+
+.car-image-box {
+    width: 334px;
+    height: 214px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.car-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.car-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #008080;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.car-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 18px;
+}
+
+.car-specs li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #444;
+    background: #e0f7fa;
+    border-radius: 8px;
+    padding: 7px 12px;
+    gap: 8px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,150,136,0.04);
+    transition: background 0.2s;
+}
+
+.car-specs li i {
+    color: #008080;
+    font-size: 1.1em;
+    min-width: 20px;
+}
+
+.no-specs {
+    color: #bdbdbd;
+    font-size: 1.05rem;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.reservation-form-section {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 32px;
+    background: #fff;
+    min-width: 320px;
+}
+
+.reservation-form {
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #008080;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    background: #f5fafd;
+    border-radius: 10px;
+    padding: 7px 12px;
+    box-shadow: 0 1px 4px rgba(0,150,136,0.04);
+    gap: 8px;
+    border: 1.5px solid #e0f7fa;
+    transition: border 0.2s;
+}
+
+.form-group:focus-within {
+    border-color: #008080;
+}
+
+.form-group label {
+    color: #008080;
+    font-size: 1.1em;
+    min-width: 22px;
+    margin-right: 6px;
+}
+
+.form-group input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 8px 0;
+    outline: none;
+    color: #222;
+}
+
+.form-group input::placeholder {
+    color: #bdbdbd;
+    font-size: 0.98em;
+}
+
+.form-row {
+    display: flex;
+    gap: 14px;
+}
+
+.form-row .form-group {
+    flex: 1 1 0;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 18px 0 0 0;
+    padding: 13px 0;
+    background: linear-gradient(90deg, #008080 60%, #00bcd4 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 150, 136, 0.10);
+    transition: background 0.3s, transform 0.18s;
+    outline: none;
+    will-change: transform;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+    background: linear-gradient(90deg, #00bcd4 60%, #008080 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.submit-btn i {
+    font-size: 1.1em;
+    transition: transform 0.2s;
+}
+
+.submit-btn:hover i {
+    transform: translateX(4px) scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .reservation-card {
+        flex-direction: column;
+        max-width: 98vw;
+    }
+    .car-details, .reservation-form-section {
+        border-right: none;
+        border-bottom: 1.5px solid #e0e0e0;
+        min-width: 0;
+        padding: 28px 12px;
+    }
+    .reservation-form-section {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .reservation-main {
+        padding: 8px 2px;
+    }
+    .reservation-card {
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    }
+    .car-details, .reservation-form-section {
+        padding: 16px 4px;
+    }
+    .reservation-form {
+        max-width: 100%;
+    }
+    .car-image-box {
+        width: 334px;
+        height: 214px;
+    }
+    .car-title {
+        font-size: 1.1rem;
+    }
+}

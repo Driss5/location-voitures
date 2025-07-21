@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* Header */
+.header p {
+    color: white !important;
+}
+.haeder-image {
+    text-align: center;
+}
+.header-p-1 p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.header-p-2 p:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.header-p-2 p:nth-child(2) {
+    font-weight: bold;
+    font-size: medium;
+    line-height: 25px;
+}
+.header-p-2 button {
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid;
+    background-color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.header-p-2 button a {
+    color: black;
+    text-decoration: none;
+}
+.header-p-2 {
+    padding: 12px 25px;
+}
+.part-1 {
+    transform: translateY(20px);
+}
+#change-word {
+    color: red;
+}
+
+.header {
+    background-image: linear-gradient(to bottom, #000000, #030303, #060606, #090909, #0c0c0c);
+    position: relative;
+    height: 88vh;
+    width: 100%;
+    overflow: hidden;
+}
+.header .bg-video {
+    position: absolute;
+    top: 0;
+    left: -572px;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Media Querie header */
+@media (min-width : 900px) {
+    .header .bg-video {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: 0;
+}
+    .header-p-1 p {
+        font-size: xxx-large;
+    }
+    .header-p-2 p:nth-child(1) {
+        font-size: xx-large;
+    }
+    .header-p-2 p:nth-child(2) {
+        font-size: x-large;
+        line-height: 30px;
+        padding: 0 4%;
+    }
+    .header-p-2 button {
+        padding: 13px 28px;
+        font-size: large;
+    }
+    .part-1 {
+        transform: translateY(-2px);
+    }
+    .header-p-2 {
+        text-align: center;
+    }
+}
+@media (min-width : 1000px) {
+    .header-p-2 p:nth-child(2) {
+        padding: 0 6%;
+    }
+}
+@media (min-width : 1800px) {
+    .header-p-2 p:nth-child(2) {
+        padding: 0 20%;
+    }
+}
+/* Cars */
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+}
+.car-parent {
+    height: fit-content;
+    padding: 40px 0;
+    background-color: #dbdbdb;
+}
+.car {
+    width: 320px;
+    height: 435px;
+    background-color:#dbdbdb;
+    border-radius: 26px;
+    border: 10px white solid;
+    margin: 20px auto;
+}
+.car-image img {
+    width: 327px;
+}
+.car-option div {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 9px;
+    background-color: white;
+    color: black;
+}
+.car-option {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+.car-info p {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: uppercase;
+    padding: 7px 0;
+}
+.car-info p:nth-child(2) {
+    color: red;
+}
+.car-info {
+    padding: 8px 0;
+}
+.car-dispo {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+.card-commande {
+    text-align: center;
+    margin-top: 15px;
+}
+.card-commande button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: black;
+    color: white;
+}
+.card-commande button a {
+    text-decoration: none;
+    color: white;
+}
+.see-all-btn {
+    text-align: center;
+    margin-top: 25px;
+}
+.see-all-btn button {
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    background: red;
+    border: none;
+    cursor: pointer;
+}
+.see-all-btn button a {
+    text-decoration: none;
+    color: white;
+}
+/* Services */
+.services-section {
+    padding: 4rem 2rem;
+    background-color: #f7f9fc;
+}
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text-section {
+    flex: 1 1 50%;
+}
+.text-section h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.text-section p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+.text-section ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    color: #555;
+}
+.text-section ul li {
+    margin-bottom: 0.5rem;
+}
+.btn-explore {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.btn-explore:hover {
+    background-color: #0056b3;
+}
+.image-section {
+    flex: 1 1 40%;
+    text-align: center;
+}
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .services-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .text-section p, .text-section ul {
+        font-size: 1rem;
+    }
+}
+/* Contuct */
+.contuct {
+    background-color: #1c1c1c;
+    padding: 4rem 1rem;
+    color: #fff;
+}
+.contuct-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+.contuct-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff0000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.contuct-container input,
+.contuct-container textarea {
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+.contuct-container input::placeholder,
+.contuct-container textarea::placeholder {
+    color: #666;
+}
+.contuct-container button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contuct-container button:hover {
+    background-color: #cc0000;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    .contuct-container {
+        padding: 1.5rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

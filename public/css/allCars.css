@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header-p p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.categorie div {
+    background-color: black;
+    padding: 10px 26px;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    border-radius: 8%;
+}
+.categorie {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.header {
+    padding: 24px 0;
+}
+/* Car */
+.parent-cars {
+    background-color:#dbdbdb;
+    padding: 50px 0;
+}
+.car {
+    width: 320px;
+    height: 410px;
+    border-radius: 26px;
+    border: 10px white solid;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+.car-image img {
+    width: 327px;
+}
+.car-option div {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 9px;
+    background-color: white;
+    color: black;
+}
+.car-option {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+.car-info p {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+.car-info p:nth-child(2) {
+    color: red;
+}
+.car-info {
+    padding: 8px 0;
+}
+.car-dispo {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+.card-commande {
+    text-align: center;
+    margin-top: 15px;
+}
+.card-commande button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: black;
+    color: white;
+}
+.card-commande button a {
+    text-decoration: none;
+    color: white;
+}
+.see-all-btn {
+    text-align: center;
+    margin-top: 25px;
+}
+.see-all-btn button {
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    background: red;
+    border: none;
+    cursor: pointer;
+}
+.see-all-btn button a {
+    text-decoration: none;
+    color: white;
+}
+@media (min-width : 700px) {
+    .cars {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 131px;
+    gap: 25px;
+}
+}
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 41px;
+}
+.page-item {
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.page-item a {
+    text-decoration: none;
+    color: white;
+}
+.page-link {
+    color: white;
+}

@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    left: -290px !important;
+}
+.sidebar.active {
+    left: 0 !important;
+}
